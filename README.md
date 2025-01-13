@@ -9,13 +9,11 @@ AgroPulse is an innovative project combining React.js with Vite for the frontend
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+- [Project](#project)
 
 ## Features
-
-- **Real-time Data Visualization**: Visualize agricultural data using interactive charts and graphs.
+- **Real-time Pest Identification System**: Implemeted the real-time pest identification feature with generating eco-friendly solution for prevent using GeminiAI API.
 - **Machine Learning Integration**: Utilize machine learning algorithms for predictive analytics.
 - **Responsive Design**: Ensure accessibility across various devices with a responsive UI.
 - **User Authentication**: Secure user login and management system.
@@ -98,6 +96,6 @@ To get a local copy up and running follow these simple steps:
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
+## Project
 
 Project Link: [https://github.com/SarangaLahiru/AgroPulse](https://github.com/SarangaLahiru/AgroPulse)
