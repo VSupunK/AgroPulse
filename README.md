@@ -1,101 +1,123 @@
-# AgroPulse
+# AgroPulse: Pest Detection System
 
-AgroPulse is an innovative project combining React.js with Vite for the frontend and Flask for the backend, alongside Machine Learning to provide advanced functionalities for agricultural applications.
+AgroPulse is a localized pest detection system designed to assist farmers in identifying pests in crops efficiently. This system leverages modern technologies like machine learning and provides multilingual support in Sinhala and Tamil, making it accessible for Sri Lankan farmers. 
 
-## Table of Contents
+---
 
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [License](#license)
-- [Project](#project)
+## Key Features
+- **Pest Detection**: Uses a trained Xception model with 8,000 images for accurate pest identification.
+- **Multilingual Support**: Supports local languages such as Sinhala and Tamil for user convenience.
+- **User-Friendly Interface**: Built with React and Vite for a responsive and intuitive UI.
+- **RESTful API**: Backend powered by Flask for handling user requests and data processing.
+- **MongoDB Integration**: Stores user data and pest detection records for scalability and efficiency.
 
-## Features
-- **Real-time Pest Identification System**: Implemeted the real-time pest identification feature with generating eco-friendly solution for prevent using GeminiAI API.
-- **Machine Learning Integration**: Utilize machine learning algorithms for predictive analytics.
-- **Responsive Design**: Ensure accessibility across various devices with a responsive UI.
-- **User Authentication**: Secure user login and management system.
+---
 
-## Demo
+## Technology Stack
 
-Check out a live demo of AgroPulse [here](#).
+### Frontend:
+- **React**: For building dynamic and interactive user interfaces.
+- **Vite**: For fast and optimized front-end development.
 
-## Installation
+### Backend:
+- **Flask**: A lightweight Python framework for creating RESTful APIs.
+- **Machine Learning**: Xception model for pest detection.
 
-To get a local copy up and running follow these simple steps:
+### Database:
+- **MongoDB**: NoSQL database for storing user information and detection data.
 
-### Prerequisites
+### Other Tools:
+- **JWT Authentication**: Secure login system.
+- **Axios**: For handling API requests in the frontend.
 
-- [Node.js](https://nodejs.org/en/download/)
-- [Python](https://www.python.org/downloads/)
-- [Vite](https://vitejs.dev/guide/)
+---
 
-### Frontend
+## Project Structure
+```
+AgroPulse/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   ├── models.py
+│   │   ├── auth.py
+│   │   └── config.py
+│   └── run.py
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Signup.jsx
+│   │   │   └── Dashboard.jsx
+│   │   ├── api.js
+│   │   └── App.jsx
+└── README.md
+```
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/SarangaLahiru/AgroPulse.git
+---
+
+## Installation and Setup
+
+### Prerequisites:
+- Node.js and npm installed.
+- Python (3.8 or later).
+- MongoDB installed and running locally or on a server.
+
+### Backend Setup:
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
    ```
-2. Navigate to the frontend directory
-   ```sh
-   cd AgroPulse/frontend
+2. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
-3. Install NPM packages
-   ```sh
+3. Start the Flask server:
+   ```bash
+   python run.py
+   ```
+
+### Frontend Setup:
+1. Navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
    npm install
    ```
-4. Start the development server
-   ```sh
+3. Start the development server:
+   ```bash
    npm run dev
    ```
 
-### Backend
-
-1. Navigate to the backend directory
-   ```sh
-   cd AgroPulse/backend
-   ```
-2. Create a virtual environment
-   ```sh
-   python -m venv venv
-   ```
-3. Activate the virtual environment
-
-   - On Windows
-     ```sh
-     venv\Scripts\activate
-     ```
-   - On macOS/Linux
-     ```sh
-     source venv/bin/activate
-     ```
-
-4. Install Python packages
-   ```sh
-   pip install -r requirements.txt
-   ```
-5. Start the Flask server
-   ```sh
-   flask run
-   ```
+---
 
 ## Usage
+1. Open the frontend in your browser (default: `http://localhost:5173`).
+2. Login or sign up to access the dashboard.
+3. Upload pest images for detection and get results instantly.
 
-1. Navigate to the frontend development server URL displayed in the terminal (usually `http://localhost:3000`).
-2. Interact with the various features to explore the functionalities of AgroPulse.
+---
 
-## Technologies Used
+## Future Enhancements
+- Adding a **mobile application** for better accessibility.
+- Integration with **real-time pest tracking** using IoT devices.
+- Advanced **reporting and analytics** for farmers.
+- Enhanced **multilingual support** for more languages.
 
-- **Frontend**: React.js, Vite, CSS, SCSS, HTML
-- **Backend**: Flask, Python
-- **Machine Learning**: Jupyter Notebook, Python libraries (e.g., scikit-learn, pandas, numpy)
+---
 
 ## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+---
 
-## Project
+## Contact
+For inquiries or support, please contact us at:
+- Email: support@agropulse.com
+- Phone: +94 71 7651 060
 
-Project Link: [https://github.com/SarangaLahiru/AgroPulse](https://github.com/SarangaLahiru/AgroPulse)
+---
+
+Thank you for using AgroPulse! Together, we can empower farmers with technology.
